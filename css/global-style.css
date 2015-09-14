@@ -1,0 +1,154 @@
+*{ margin: 0; padding: 0; 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+body{font-family: Titillium Web, Arial, serif; overflow-x: hidden; font-size: 14px;
+	line-height: 15px; -webkit-font-smoothing: antialiased;
+	background: url(../images/BG.png); color: #929292;}
+
+html, body { height: 100%;}
+
+h1.hidden{position: absolute; margin-left: -9999px;}
+h1{font-size: 27px;}
+a{font-style: italic; font-family: Pacifico, Arial, serif; text-decoration: none;color: inherit;}
+p a{ font-family: Titillium Web, Arial, serif; text-decoration: underline;}
+a:hover{color: black; cursor: pointer;}
+img{width: 100%;}
+button{font-family: Pacifico, Arial, serif; height: 40px;border: 0;font-size: 23px;color: #cdcdcd;
+	-webkit-font-smoothing: antialiased; background-color: rgba(0,0,0,0.73);}
+button:hover{color: black; cursor: pointer;background-color: rgba(21,33,32,0.50);}
+
+
+
+.wrapper{max-width: 660px; width: 100%; height: 100%; margin: 0 auto; padding: 0 10px;}
+
+.vertical-allign{position: relative; top: 50%; -webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);-o-transform: translateY(-50%);
+	transform: translateY(-50%);}
+
+.case-studiesBtn{ padding-left: 9px;padding-right: 9px; }
+
+.logo{float: left; margin-top: 4px; width: 262px;height: 34px;}
+#header{margin-top: 38px; border-bottom: 1px solid black;display: inline-block;width: 100%;padding-bottom: 32px;}
+#header a{font-size: 18px;}
+#header nav{display: inline-block;float: left;}
+#header nav ul{list-style-type: none;}
+#header nav ul li{display: inline-block;margin-left: 20px;}
+
+
+.fake-margin{height: 50px;}
+
+.body{color: black}
+.body h1{font-size: 30px; margin-top: 31px; line-height: 30px;}
+.body header{display: inline-block;margin-top: 23px;}
+.body h2{line-height: 20px; font-size: 25px; margin-top: 20px;}
+.body img{margin-top: 20px;} 
+.body .mockup img{width: 100%;margin-bottom: -30px;}
+.body .mockup .github{margin-top: 8px; text-align: center;}
+/*.body .overview{width: 61.4567%; float: left; margin-top: 9px; font-size: 16px; line-height: 18px;}*/
+
+.left{float: left}
+.right{float: right;}
+.block{display: inline-block; margin-top: 20px;}
+.column1{width:9.5588%;}
+.column2{width:22.0588%;}
+.column3{width:34.5588%;}
+.column4{width:47.0588%;}
+.column5{width:59.5588%;}
+.column6{width:72.0588%;}
+.column7{width:84.5588%;}
+.column8{width:97.0588%;}
+
+.body p{margin-top: 12px;line-height: 20px;font-size: 16px;}
+.body 
+
+
+
+
+
+
+
+
+footer{ float: left; width: 93.75%; font-size: 14px;margin-top: 31px;margin-bottom: 12px; color: black}
+footer a{font-size: 18px; padding: 0 3px;}
+footer ul{ list-style-type: none; }
+footer ul li{ display: inline-block; }
+footer .mobile{display: none; padding-top: 7px;}
+footer ul li:last-child{padding-top: 0px;}
+
+footer ul li + li:before{ content:"|"; }
+
+.pop-up{position: absolute; width: 100%;height: 100%;z-index: 2;top:0;left: 0;
+	opacity: 0; height: 0;overflow-x:hidden;-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;}
+.pop-up::after { content: ""; background: url(../images/BG.png); opacity: 0.95; 
+	top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
+
+#projectsPopUp a{font-family: Signika, Arial, serif; font-size: 24px; text-transform: uppercase;
+	line-height: 26px;}
+#projectsPopUp li{text-align: center;}
+#projectsPopUp li + li{margin-top: 31px;}
+
+#contactPopUp fieldset{margin: 0 auto; width: 32%;position: relative; font-size: 14px; border: 0;}
+#contactPopUp h2{font-size: 23px;}
+#contactPopUp p{margin-top: 0;}
+#contactPopUp header{margin-bottom: 13px;}
+#contactPopUp textarea{height: 100px;max-height: 100px;max-width: 100%}
+.contact-element{width:100%;border: 0; padding: 4px; outline: 0; margin-bottom: 6px;
+	font-family: Titillium Web, Arial, serif; overflow-x: hidden; font-size: 14px;}
+.submit_btn{width: 46.875%; margin-left: 53.125%;}
+
+.returnBtn{ width: 165px; height: 165px; background: url(../images/Btnexit2.png);
+	opacity: 0.65; position: absolute; top: -82px; right: -82px;
+	-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+
+@media screen and ( max-width: 660px ){
+	#header nav{margin-top: 20px;}
+	#header nav ul li:first-child{margin: 0;}
+}
+@media screen and ( max-width: 550px ){
+	.vertical-allign-mobile{position: relative; top: 50%; -webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);-o-transform: translateY(-50%);
+		transform: translateY(-50%);}
+
+	.pop-up{ -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+
+	h1{line-height: 24px;}
+
+	#header {padding-bottom: 18px;}
+	#header nav{margin-top: 20px; width: 100%;}
+	#header nav ul li{margin-top: 18px;margin-left: 0;width: 32%;}
+	#header nav ul li a{text-align: center; width: 100%;display: inline-block;}
+	#header nav ul li:first-child{width: 100%;margin-top: 0;}
+	#header nav ul li button{ width:100%;}
+	#header nav ul li:first-child{margin: 0;}
+
+	.body header{margin-top: 22px;}
+	.body p{font-size: 18px; line-height: 22px;}
+	.body .guithub {margin-top: 4px;}
+	
+	footer{ /*position: absolute; bottom: 12px;*/  }
+	footer ul li:nth-child(3):before{ content:""; }
+	
+	footer .desktop{display: none;}
+	footer .mobile{display: inline-block;}
+	
+	#projectsPopUp ul{width: 93.75%;}
+	#contactPopUp form{width: 93.75%;}
+
+	.right{float: left;}
+	.column1{width:9.5588%;}
+	.column2{width:22.0588%;}
+	.column3, .column4, .column5, .column6, .column7, .column8{width:93.75%;}
+}
+
+
+
+
+
+
+
+
+
+
